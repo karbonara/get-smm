@@ -1,0 +1,107 @@
+.statistics {
+  margin-top: -40px;
+}
+
+.statistics__live {
+  padding: 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  background: #1E252B;
+  /* overflow: auto;
+    transform: translateX(34px); */
+}
+
+.statistics__live div {
+  width: 90%;
+  height: 155px;
+  padding: 35px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #FF6E30;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.statistics__live h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: 'MazzardL', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FF6E30;
+}
+
+.statistics__live p {
+  margin: 0;
+  font-family: 'MazzardL-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.statistics__modile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .statistics__live h2 {
+    font-size: 38px;
+    line-height: 31px;
+  }
+  .statistics__live div {
+    width: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  .autoplay {
+    display: none;
+  }
+  .statistics {
+    margin-top: -24px;
+    background: #1E252B;
+    padding: 32px 0;
+  }
+  .statistics__modile {
+    padding: 32px 0;
+    display: block;
+  }
+  .statistics__live {
+    margin-top: -16px;
+    padding: 16px 0;
+  }
+  .statistics__live div {
+    width: 323px;
+    padding: 15px;
+  }
+  .statistics__live h2 {
+    font-size: 34px;
+    font-style: 34px;
+  }
+  .statistics__live p {
+    font-size: 23px;
+    font-style: 23px;
+  }
+}
+/*# sourceMappingURL=statistics-live.css.map */

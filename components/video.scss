@@ -1,0 +1,327 @@
+.video {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 59px 10px 0px 10px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        width: 66px;
+        height: 111px;
+        background: url('../img/icons/heart-3.png');
+    }
+
+    & h1 {
+        padding: 0px 226px;
+        position: relative;
+        margin: 0;
+        font-family: 'MazzardL', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 80px;
+        text-align: center;
+        color: #272E35;
+    }
+
+    // & h1::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 20px;
+    //     width: 52px;
+    //     height: 52px;
+    //     background: url('../img/icons/heart.png');
+    // }
+
+    & p {
+        position: relative;
+        text-align: center;
+        font-family: 'MazzardL', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #272E35;
+    }
+}
+.video__img-wrapper {
+    position: relative;
+    box-shadow: 0px -2px 18px 10px rgba(141, 149, 155, 0.6);
+    border-radius: 20px;
+}
+.video__play {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 199;
+}
+
+
+.dark-theme .video__theme {
+    background: #292735;
+    transition: 0.2s ease;
+
+    & h1 {
+        color: #EEEFF2;
+        transition: 0.2s ease;
+    }
+    & p {
+        color: #6E757C;
+        transition: 0.2s ease;
+
+    }
+}
+.video__img {
+
+        position: relative;
+        margin-top: -20px;
+
+}
+
+.video__btn {
+    display: block;
+    width: 241px;
+    text-align: center;
+    position: relative;
+    margin: 45px auto;
+    color: #ffffff;
+    padding: 15px 10px;
+    background: #FF6E30;
+    border-radius: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    &:hover {
+        opacity: 0.7;
+    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: -55px;
+    //     right: 400px;
+    //     width: 83px;
+    //     height: 100px;
+    //     background: url('../img/icons/ic-yellow.png');
+    //     z-index: 100;
+    // }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: -50px;
+    //     left: 500px;
+    //     width: 107px;
+    //     height: 110px;
+    //     background: url('../img/icons/ic-red.png');
+    //     z-index: 100;
+    // }
+}
+.quote-1 {
+    width: 60px;
+    position: absolute;
+    top: 230px;
+    left: 130px;
+    // transform: translate(70px, -250px);
+}
+.quote-2 {
+    top: 140px;
+    right: 180px;
+    width: 60px;
+    margin-left: auto;
+    position: absolute;
+}
+.heart {
+    width: 60px;
+    top: 100px;
+    // transform: translate(10px, -400px);
+    position: absolute;
+}
+.ic-yellow {
+    width: 60px;
+    transform: translate(220px, -200px);
+    position: absolute;
+}
+.ic-red {
+    width: 60px;
+    transform: translate(740px, -200px);
+    position: absolute;
+}
+.heart-2 {
+    width: 60px;
+    top: 435px;
+    right: 42px;
+    // transform: translate(10px, -400px);
+    position: absolute;
+}
+
+
+@media (max-width: 1249px) {
+    .video__img {
+        margin: 0 auto;
+        display: block;
+        width: 93%;
+    }
+    .video {
+        padding: 185px 10px 0 10px;
+        & p::after {
+            right: 10px;
+        }
+    }
+    .video__btn::before {
+        left: 390px;
+    }
+    .video__play {
+        width: inherit;
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 199;
+    }
+    .video__img-wrapper {
+        box-shadow: none;
+    }
+}
+@media (max-width: 1030px) {
+
+    .video__btn::before {
+        display: none;
+    }
+    // .video__play {
+    //     top: 640px;
+    // }
+    .ic-red {
+        transform: translate(520px, -203px); 
+    }
+}
+@media (max-width: 955px)  {
+        .video {
+        & h1 {
+            padding: 0 10px;
+        }
+    }
+    .quote-2 {
+        top: 100px;
+        right: 56px;
+    }
+}
+@media (max-width: 866px) {
+        .video__play {
+        top: 112px;
+        width: 90px;
+    }
+    .quote-1 {
+        left: 50px;
+    }
+}
+@media (max-width: 770px) {
+    .video {
+        & h1 {
+            padding: 0;
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+@media (max-width: 440px) {
+    .video {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 145px 0px 0px 0px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    
+        & h1 {
+            padding: 0px 31px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+        & h1::before {
+            display: none;
+        }
+    
+        & p {
+            padding: 0 63px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        & p::after {
+            right: 28px;
+            top: -130px;
+            width: 42px;
+            height: 31px;
+            background: url('../img/icons/quote-2-mob.svg');
+        }
+        & p::before {
+            top: -18px;
+            left: 7px;
+            width: 38px;
+            height: 28px;
+            background: url('../img/icons/quote-mob.svg');
+        }
+    
+        
+    }
+    .ic-red {
+        display: none;
+    }
+    .video__img {
+        width: 100%;
+    }
+    .video__btn {
+        width: 292px;
+        margin: 45px auto 16px auto;
+    }
+    .video__btn::before {
+        left: 0;
+    }
+    .video__btn::after {
+        top: -289px;
+        right: 223px;
+    }
+    .video__play {
+        top: 200px;
+    }
+    .heart {
+        top: 95px;
+        left: 20px;
+        width: 35px;
+        & img {
+            width: 35px;
+        }
+    }
+    .quote-1 {
+        top: 200px;
+        left: 3px;
+        & img {
+            width: 60px;
+        }   
+    }
+    .quote-2 {
+        & img {
+            width: 60px;
+        }
+    }
+    .ic-yellow {
+        transform: translate(249px, -150px);
+        & img {
+            width: 50px;
+        }
+    }
+}

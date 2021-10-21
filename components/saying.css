@@ -1,0 +1,146 @@
+.saying {
+  background: #EBF5FF;
+}
+
+.dark-theme .saying {
+  background: #292735;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.dark-theme .saying__container h2 {
+  color: #F3F4F8;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.saying .slick-slide img {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.saying__container {
+  margin: 0 auto;
+  padding: 130px 0;
+}
+
+.saying__container h2 {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #1E252B;
+}
+
+.saying__container h2::after {
+  content: '';
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  top: -65px;
+  left: -350px;
+  background: url("../img/icons/heart-2.png");
+}
+
+.saying__container h2::before {
+  content: '';
+  position: absolute;
+  width: 73px;
+  height: 75px;
+  top: 80px;
+  right: -300px;
+  background: url("../img/icons/star.png");
+}
+
+.saying__container-intro {
+  text-align: center;
+}
+
+.saying__container-intro img {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.saying__slider .slick-next {
+  border: none;
+  font-size: 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: -124px;
+  left: 53%;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  width: 40px;
+  height: 40px;
+  background: url("../img/icons/arrow-left.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.saying__slider .slick-prev {
+  display: none;
+  border: none;
+  overflow: hidden;
+  font-size: 0;
+  cursor: pointer;
+  position: absolute;
+  top: -104px;
+  left: 47%;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  width: 40px;
+  height: 40px;
+  background: url("../img/icons/arrow-left.svg");
+}
+
+@media (max-width: 1249px) {
+  .saying__slider .slick-slide img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .saying__container h2::before {
+    right: -180px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .saying__container h2::before {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .saying__container {
+    padding: 68px 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .saying__container {
+    width: 100vw;
+  }
+  .saying__container h2 {
+    width: 90vw;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+  .saying__container h2::before {
+    display: none;
+  }
+  .saying__slider .slick-prev {
+    top: -20px;
+  }
+  .saying__slider .slick-next {
+    top: -40px;
+  }
+  .saying__container-intro img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=saying.css.map */

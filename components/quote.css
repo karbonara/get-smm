@@ -1,0 +1,65 @@
+.quote {
+  background: #FF6E30;
+  position: relative;
+}
+
+.quote div {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 130px 0;
+}
+
+.quote h2 {
+  padding: 0 174px;
+  font-family: 'MazzardL', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.quote p {
+  font-family: 'MazzardL', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.quote__rocket {
+  position: absolute;
+  top: 67%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 770px) {
+  .quote div {
+    padding: 62px 0 102px 0;
+  }
+  .quote h2 {
+    padding: 0 72px;
+  }
+}
+
+@media (max-width: 440px) {
+  .quote h2 {
+    padding: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .quote div {
+    max-width: inherit;
+    width: 90vw;
+  }
+  .quote::before {
+    display: none;
+  }
+  .quote__rocket {
+    display: none;
+  }
+}
+/*# sourceMappingURL=quote.css.map */
